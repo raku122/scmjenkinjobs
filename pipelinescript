@@ -1,9 +1,35 @@
-
 pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('BUILD') {
+            steps {
+                bat '''hostname
+                ipconfig
+                pause'''
+
+            }
+        }
+
+stage('DEPLOY') {
+            steps {
+                bat '''hostname
+                ipconfig
+                pause'''
+
+            }
+        }
+
+stage('TEST') {
+            steps {
+                bat '''hostname
+                ipconfig
+                pause'''
+
+            }
+        }
+
+stage('RELEASE') {
             steps {
                 bat '''hostname
                 ipconfig
