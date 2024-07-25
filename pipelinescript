@@ -1,3 +1,15 @@
-bat '''hostname
-ipconfig
-pause'''
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                bat '''hostname
+                ipconfig
+                pause'''
+
+            }
+        }
+    }
+}
